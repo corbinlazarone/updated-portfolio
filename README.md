@@ -1,1 +1,1 @@
-# Peronsal Portfolio website build with go and html/css : )
+# Peronsal Portfolio built with go and html/css 
