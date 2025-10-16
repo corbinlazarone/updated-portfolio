@@ -10,8 +10,14 @@ func main() {
 
 	port := flag.String("port", ":4000", "port the server runs on")
 
+	flag.Parse()
+
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", home)
+
 	srv := &http.Server{
-		Addr: *port,
+		Addr:    *port,
+		Handler: mux,
 	}
 
 	log.Printf("Listening on port %s", *port)
