@@ -1,0 +1,145 @@
+{{ define "home" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Portfolio</title>
+  <link rel="stylesheet" href="/static/css/home.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="terminal-title">corbinlazarone@portfolio: ~</span>
+      </div>
+      <div class="terminal-body">
+        {{ template "ascii" .}}
+        <div class="section">
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="command">cat about.txt</span>
+          </div>
+          <div class="output">
+            <div class="about-header">👾 About Me:</div>
+            <div class="command-item">▪ I'm an Undergrad Student at LSUA studying Computer Science</div>
+            <div class="command-item">▪ My Interests are in Systems, Architecture and Networking</div>
+
+            <div class="about-header">🌱 Interests:</div>
+            <div class="command-item">▪ Programming</div>
+            <div class="command-item">▪ Rock Climbing</div>
+            <div class="command-item">▪ Running</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="command">cat experience.txt</span>
+          </div>
+          <div class="output">
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Software Engineer Intern</span>
+                <span class="experience-company">@ BBP</span>
+              </div>
+              <div class="experience-date">Aug 2024 - Present</div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Software Engineer Intern</span>
+                <span class="experience-company">@ Chevron</span>
+              </div>
+              <div class="experience-date">May 2024 - Aug 2024</div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-title">Software Engineer Intern</span>
+                <span class="experience-company">@ BBP</span>
+              </div>
+              <div class="experience-date">Dec 2022 - May 2024</div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+              <div class="experience-desc">▪ N/A.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="section">
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="command">ls projects/</span>
+          </div>
+          <div class="output">
+            <!-- <div class="command-item">→ <a href="#">awesome-web-app</a> - A cool web application</div> -->
+            <!-- <div class="command-item">→ <a href="#">neural-network-viz</a> - ML visualization tool</div> -->
+            <!-- <div class="command-item">→ <a href="#">terminal-portfolio</a> - This website!</div> -->
+          </div>
+        </div>
+
+        <!-- <div class="section"> -->
+        <!--   <div class="line"> -->
+        <!--     <span class="prompt">$</span> -->
+        <!--     <span class="command">cat skills.txt</span> -->
+        <!--   </div> -->
+        <!--   <div class="output"> -->
+        <!--     <div class="command-item">▪ JavaScript / TypeScript</div> -->
+        <!--     <div class="command-item">▪ React / Node.js</div> -->
+        <!--     <div class="command-item">▪ Python / Django</div> -->
+        <!--     <div class="command-item">▪ HTML / CSS / Design</div> -->
+        <!--   </div> -->
+        <!-- </div> -->
+
+        <div class="section">
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="command">ls blog/</span>
+          </div>
+          <div class="output">
+            <!-- <div class="command-item">→ <a href="#">Building a Terminal Portfolio</a> - How I created this website</div> -->
+            <!-- <div class="command-item">→ <a href="#">Modern CSS Techniques</a> - Exploring glassmorphism and more</div> -->
+            <!-- <div class="command-item">→ <a href="#">JavaScript Best Practices</a> - Clean code tips</div> -->
+            <div class="command-item">→ <a href="/blog">view all posts →</a></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="command">cat contact.txt</span>
+          </div>
+          <div class="output">
+            <div class="command-item">Email: <a href="mailto:corbinlazarone1@gmail.com">corbinlazarone1@gmail.com</a>
+            </div>
+            <div class="command-item">LinkedIn: <a
+                href="https://www.linkedin.com/in/corbin-lazarone-58647923b" />linkedin.com/in/corbinlazarone</a></div>
+            <div class="command-item">GitHub: <a href="https://github.com/corbinlazarone">github.com/corbinlazarone</a>
+            </div>
+            <div class="command-item">Twitter: <a href="https://x.com/crackkked">@crackkked</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>{{end}}

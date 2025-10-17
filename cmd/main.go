@@ -14,10 +14,11 @@ func main() {
 
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("/", home)
-
 	fileServer := http.FileServer(http.Dir("./ui/static"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+
+	mux.HandleFunc("/", home)
+	mux.HandleFunc("/blog", blog)
 
 	srv := &http.Server{
 		Addr:    *port,
