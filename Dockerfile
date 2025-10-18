@@ -7,14 +7,11 @@ RUN apk add --no-cache git
 # Set working directory
 WORKDIR /app
 
-# Copy go mod file
-COPY go.mod ./
-
-# Copy source code
+# Copy everything
 COPY . .
 
-# Build the application from cmd directory
-RUN CGO_ENABLED=0 GOOS=linux go build -o main ./cmd
+# Build the application - compile all files in cmd package
+RUN CGO_ENABLED=0 GOOS=linux go build -o main ./cmd/*.go
 
 # Final stage
 FROM alpine:latest
