@@ -1,0 +1,154 @@
+/* Base Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E201E;
+    color: #ECDFCC;
+    font-family: 'Courier New', monospace;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Terminal Styles */
+.terminal {
+    background-color: #1E201E;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.terminal-header {
+    background-color: #3C3D37;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #697565;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.terminal-title {
+    margin-left: 50px;
+    color: #697565;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.terminal-body {
+    padding: 40px 60px;
+    min-height: calc(100vh - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Command Prompt Styles */
+.prompt {
+    color: #697565;
+    margin-right: 8px;
+}
+
+.command {
+    color: #ECDFCC;
+}
+
+.output {
+    margin: 12px 0 24px 0;
+    color: #ECDFCC;
+}
+
+.line {
+    margin-bottom: 8px;
+}
+
+/* Typography */
+h1, h2 {
+    color: #ECDFCC;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+/* Link Styles */
+a {
+    color: #697565;
+    text-decoration: none;
+    border-bottom: 1px solid #697565;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ECDFCC;
+    border-bottom-color: #ECDFCC;
+}
+
+/* Section Container */
+.section {
+    margin-bottom: 32px;
+    border: 1px solid #3C3D37;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: rgba(60, 61, 55, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terminal-header {
+        padding: 6px 12px;
+    }
+
+    .terminal-title {
+        margin-left: 20px;
+        font-size: 11px;
+        letter-spacing: 0.3px;
+    }
+
+    .terminal-body {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-header {
+        padding: 6px 8px;
+    }
+
+    .terminal-title {
+        margin-left: 8px;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .terminal-body {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 12px;
+    }
+}
