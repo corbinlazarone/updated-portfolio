@@ -4,6 +4,7 @@
     color: #697565;
     font-size: 11px;
     line-height: 1.1;
+    margin-left: auto;
     margin: 20px 0 30px 0;
     white-space: pre;
     font-family: 'Courier New', monospace;
@@ -72,13 +73,14 @@
     .ascii-art {
         font-size: 6px;
         overflow-x: auto;
+        margin-left: auto;
         margin: 15px -10px 20px -10px;
     }
 }
 
 @media (max-width: 480px) {
     .ascii-art {
-        font-size: 4px;
+        margin-left: auto;
         line-height: 1.2;
     }
 }
