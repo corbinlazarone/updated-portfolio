@@ -17,26 +17,31 @@
   <link rel="canonical" href="{{.SEO.CanonicalURL}}">
   {{end}}
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="{{.SEO.OGType}}">
-  <meta property="og:title" content="{{.SEO.Title}}">
-  <meta property="og:description" content="{{.SEO.Description}}">
-  {{if .SEO.CanonicalURL}}
-  <meta property="og:url" content="{{.SEO.CanonicalURL}}">{{end}}
-  {{if .SEO.OGImage}}
-  <meta property="og:image" content="{{.SEO.OGImage}}">{{end}}
-  {{if .SEO.OGImageAlt}}
-  <meta property="og:image:alt" content="{{.SEO.OGImageAlt}}">{{end}}
+  <!-- HTML Meta Tags -->
+  <title>Corbin Lazarone - Software Engineer Portfolio</title>
+  <meta name="description"
+    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="{{.SEO.TwitterCard}}">
-  <meta name="twitter:title" content="{{.SEO.Title}}">
-  <meta name="twitter:description" content="{{.SEO.Description}}">
-  {{if .SEO.OGImage}}
-  <meta name="twitter:image" content="{{.SEO.OGImage}}">{{end}}
-  {{if .SEO.OGImageAlt}}
-  <meta name="twitter:image:alt" content="{{.SEO.OGImageAlt}}">{{end}}
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://corbinlazarone.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Corbin Lazarone - Software Engineer Portfolio">
+  <meta property="og:description"
+    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/images/f617cc51-1b87-4175-b51b-78550f9d6a89.png?token=IC-zdOM8sCIHZj7PHHkZwo-6-VTKec8TiC0nlL_6rH8&height=632&width=1200&expires=33299513076">
 
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="corbinlazarone.com">
+  <meta property="twitter:url" content="https://corbinlazarone.com">
+  <meta name="twitter:title" content="Corbin Lazarone - Software Engineer Portfolio">
+  <meta name="twitter:description"
+    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/images/f617cc51-1b87-4175-b51b-78550f9d6a89.png?token=IC-zdOM8sCIHZj7PHHkZwo-6-VTKec8TiC0nlL_6rH8&height=632&width=1200&expires=33299513076">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   {{if .SEO.SchemaJSON}}
   <!-- Structured Data -->
   <script type="application/ld+json">
