@@ -22,7 +22,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	files := []string{
 		"./ui/html/home.tmpl.html",
-		"./ui/html/ascii.tmpl.html",
 	}
 
 	// read each template file and parse it

@@ -1,15 +1,5 @@
 /* Home Page Specific Styles */
 
-.ascii-art {
-    color: #697565;
-    font-size: 11px;
-    line-height: 1.1;
-    margin-left: auto;
-    margin: 20px 0 30px 0;
-    white-space: pre;
-    font-family: 'Courier New', monospace;
-}
-
 .command-list {
     margin-top: 16px;
 }
@@ -73,14 +63,14 @@
     .ascii-art {
         font-size: 6px;
         overflow-x: auto;
-        margin-left: auto;
-        margin: 15px -10px 20px -10px;
+        margin-left: 16px;
+        margin: 15px 0 20px 16px;
     }
 }
 
 @media (max-width: 480px) {
     .ascii-art {
-        margin-left: auto;
+        margin-left: 12px;
         line-height: 1.2;
     }
 }
