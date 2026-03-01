@@ -5,190 +5,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  {{if .SEO}}
-  <title>{{.SEO.Title}}</title>
-  <meta name="description" content="{{.SEO.Description}}">
-  {{if .SEO.Keywords}}
-  <meta name="keywords" content="{{range $i, $k := .SEO.Keywords}}{{if $i}}, {{end}}{{$k}}{{end}}">
-  {{end}}
-
-  {{if .SEO.CanonicalURL}}
-  <link rel="canonical" href="{{.SEO.CanonicalURL}}">
-  {{end}}
-
-  <!-- HTML Meta Tags -->
-  <title>Corbin Lazarone - Software Engineer Portfolio</title>
-  <meta name="description"
-    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://corbinlazarone.com">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Corbin Lazarone - Software Engineer Portfolio">
-  <meta property="og:description"
-    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
-  <meta property="og:image"
-    content="https://opengraph.b-cdn.net/production/images/f617cc51-1b87-4175-b51b-78550f9d6a89.png?token=IC-zdOM8sCIHZj7PHHkZwo-6-VTKec8TiC0nlL_6rH8&height=632&width=1200&expires=33299513076">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="corbinlazarone.com">
-  <meta property="twitter:url" content="https://corbinlazarone.com">
-  <meta name="twitter:title" content="Corbin Lazarone - Software Engineer Portfolio">
-  <meta name="twitter:description"
-    content="Software engineer specializing in backend development, distributed systems, and cloud infrastructure. Explore my projects, experience, and technical blog.">
-  <meta name="twitter:image"
-    content="https://opengraph.b-cdn.net/production/images/f617cc51-1b87-4175-b51b-78550f9d6a89.png?token=IC-zdOM8sCIHZj7PHHkZwo-6-VTKec8TiC0nlL_6rH8&height=632&width=1200&expires=33299513076">
-
-  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-  {{if .SEO.SchemaJSON}}
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {{.SEO.SchemaJSON}}
-  </script>
-  {{end}}
-  {{else}}
-  <title>Corbin Lazarone - Portfolio</title>
-  {{end}}
-
+  <title>Corbin Lazarone</title>
   <link rel="stylesheet" href="/static/css/base.css">
   <link rel="stylesheet" href="/static/css/home.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="terminal">
-      <div class="terminal-header">
-        <span class="terminal-title">corbinlazarone@portfolio: ~</span>
-      </div>
-      <div class="terminal-body">
-        <div class="section">
-          <div class="line">
-            <span class="prompt">$</span>
-            <span class="command">cat about.txt</span>
-          </div>
-          <div class="output">
-            <div class="about-header">👾 About Me:</div>
-            <div class="command-item">▪ I'm an Undergrad Student at LSU studying Computer Science</div>
-            <div class="command-item">▪ My Interests are in Systems Programming and Web Dev</div>
+    <p class="name">Corbin Lazarone</p>
 
-            <div class="about-header">🌱 Interests:</div>
-            <div class="command-item">▪ Programming</div>
-            <div class="command-item">▪ Rock Climbing</div>
-            <div class="command-item">▪ Running</div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="line">
-            <span class="prompt">$</span>
-            <span class="command">cat experience.txt</span>
-          </div>
-          <div class="output">
-            <div class="experience-item">
-              <div class="experience-header">
-                <span class="experience-title">Software Engineer Intern</span>
-                <span class="experience-company">@ <a href="https://bbpsales.com/" target="_blank">BBP</a></span>
-              </div>
-              <div class="experience-date">Aug 2024 - Present</div>
-              <div class="experience-desc">▪ Built and maintain headless ecommerce storefronts using <strong>Next.js,
-                  Asp.Net,
-                  and BigCommerce.</strong>
-              </div>
-            </div>
+    <p class="intro">I'm an undergraduate student at LSU studying Computer Science with a focus on Systems Programming and Web Development.</p>
 
-            <div class="experience-item">
-              <div class="experience-header">
-                <span class="experience-title">Software Engineer Intern</span>
-                <span class="experience-company">@ <a href="https://chevron.com/" target="_blank">Chevron</a></span>
-              </div>
-              <div class="experience-date">May 2024 - Aug 2024</div>
-              <div class="experience-desc">▪ Built <strong>Asp.Net APIs</strong> for business users to interact with our
-                database in
-                their applicatons.
-              </div>
-            </div>
+    <ul class="experience">
+      <li>Software Engineer Intern @ <a href="https://bbpsales.com/" target="_blank">BBP</a> (Aug 2024 - Present) - Built and maintain headless ecommerce storefronts using Next.js, Asp.Net, and BigCommerce</li>
+      <li>Software Engineer Intern @ <a href="https://chevron.com/" target="_blank">Chevron</a> (May 2024 - Aug 2024) - Built Asp.Net APIs for business users to interact with our database</li>
+      <li>Software Engineer Intern @ <a href="https://bbpsales.com/" target="_blank">BBP</a> (Dec 2022 - May 2024) - Collaborated on a team to redesign an ERP system using Ignition and Asp.Net</li>
+    </ul>
 
-            <div class="experience-item">
-              <div class="experience-header">
-                <span class="experience-title">Software Engineer Intern</span>
-                <span class="experience-company">@ <a href="https://bbpsales.com/" target="_blank">BBP</a></span>
-              </div>
-              <div class="experience-date">Dec 2022 - May 2024</div>
-              <div class="experience-desc">▪ Collaborated with a team of developers to redesign a new ERP system for
-                company users using <strong>Ignition</strong> (frontend) and <strong>Asp.Net </strong> (backend).
-              </div>
-            </div>
-          </div>
-        </div>
+    <p class="section-label">Projects</p>
+    <ul class="projects">
+      <li><a href="https://store.sitesync.cloud/" target="_blank">Sitesync Store</a> - Headless IoT e-commerce store</li>
+      <li><a href="https://github.com/corbinlazarone/snippetbox" target="_blank">snippetbox</a> - A web app to create, store, and share text snippets</li>
+      <li><a href="https://github.com/corbinlazarone/Alien-Invasion" target="_blank">Alien Invasion</a> - A replica of the classic game Space Invaders</li>
+    </ul>
 
+    <p class="education">LSU, Computer Science</p>
 
-        <div class="section">
-          <div class="line">
-            <span class="prompt">$</span>
-            <span class="command">ls projects/</span>
-          </div>
-          <div class="output">
-            <div class="command-item">→ <a href="https://github.com/corbinlazarone/Alien-Invasion" target="_blank">Alein
-                Invasion</a> A
-              replica to the game Space Invaders</div>
-            <div class="command-item">→ <a href="https://github.com/corbinlazarone/updated-portfolio"
-                target="_blank">my-portfolio</a> -
-              This website!</div>
-            <div class="command-item">→ <a href="https://github.com/corbinlazarone/snippetbox"
-                target="_blank">snippetbox</a> - A web
-              app for users to create, store and share snippets of text.
-            </div>
-            <!-- <div class="command-item">→ <a href="#">awesome-web-app</a> - A cool web application</div> -->
-            <!-- <div class="command-item">→ <a href="#">neural-network-viz</a> - ML visualization tool</div> -->
-          </div>
-        </div>
-
-        <!-- <div class="section"> -->
-        <!--   <div class="line"> -->
-        <!--     <span class="prompt">$</span> -->
-        <!--     <span class="command">cat skills.txt</span> -->
-        <!--   </div> -->
-        <!--   <div class="output"> -->
-        <!--     <div class="command-item">▪ JavaScript / TypeScript</div> -->
-        <!--     <div class="command-item">▪ React / Node.js</div> -->
-        <!--     <div class="command-item">▪ Python / Django</div> -->
-        <!--     <div class="command-item">▪ HTML / CSS / Design</div> -->
-        <!--   </div> -->
-        <!-- </div> -->
-
-        <div class="section">
-          <div class="line">
-            <span class="prompt">$</span>
-            <span class="command">ls blog/</span>
-          </div>
-          <div class="output">
-            <!-- <div class="command-item">→ <a href="#">Building a Terminal Portfolio</a> - How I created this website</div> -->
-            <!-- <div class="command-item">→ <a href="#">Modern CSS Techniques</a> - Exploring glassmorphism and more</div> -->
-            <!-- <div class="command-item">→ <a href="#">JavaScript Best Practices</a> - Clean code tips</div> -->
-            <div class="command-item">→ <a href="/blog/fear-of-failure">Fear of Failure</a></div>
-            <div class="command-item">→ <a href="/blog">view all posts</a></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="line">
-            <span class="prompt">$</span>
-            <span class="command">cat contact.txt</span>
-          </div>
-          <div class="output">
-            <div class="command-item">Email: <a href="mailto:corbinlazarone1@gmail.com">corbinlazarone1@gmail.com</a>
-            </div>
-            <div class="command-item">LinkedIn: <a href="https://www.linkedin.com/in/corbin-lazarone-58647923b"
-                target="_blank" />linkedin.com/in/corbinlazarone</a></div>
-            <div class="command-item">GitHub: <a href="https://github.com/corbinlazarone"
-                target="_blank">github.com/corbinlazarone</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="social">Connect with me on <a href="https://github.com/corbinlazarone" target="_blank">github</a>, <a href="https://www.linkedin.com/in/corbin-lazarone-58647923b" target="_blank">linkedin</a>, or at corbinlazarone1@gmail.com!</p>
   </div>
 </body>
 
-</html>{{end}}
+</html>{{ end }}
