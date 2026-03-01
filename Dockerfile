@@ -27,9 +27,6 @@ COPY --from=builder /app/main .
 # Copy UI directory for templates/static files
 COPY --from=builder /app/ui ./ui
 
-# Copy content directory for blog posts
-COPY --from=builder /app/content ./content
-
 # Render provides the PORT environment variable
 EXPOSE ${PORT:-8080}
 
